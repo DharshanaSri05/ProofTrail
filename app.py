@@ -299,9 +299,8 @@ else:
     )
 
     valid_count = int(
-        (expiry_dates.dt.date >= date.today()).sum()
-    )
-
+    (expiry_dates >= pd.Timestamp(date.today())).sum()
+)
     no_expiry_count = int(expiry_dates.isna().sum())
 
     expiry_summary = pd.DataFrame({
