@@ -295,7 +295,7 @@ else:
     st.subheader("Expired vs Valid Documents")
 
     expired_count = int(
-        (expiry_dates.dt.date < date.today()).sum()
+        (expiry_dates < pd.Timestamp(date.today())).sum()
     )
 
     valid_count = int(
