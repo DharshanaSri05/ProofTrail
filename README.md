@@ -34,8 +34,7 @@ streamlit run app.py
 
 ## Live Demo
 
-[Open ProofTrail](prooftrail-dharshana-test
-.streamlit.app)
+[Open ProofTrail](prooftrail-dharshana-test.streamlit.app)
 
 ## Project Purpose
 
